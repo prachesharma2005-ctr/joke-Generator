@@ -1,6 +1,6 @@
 
 const joke = document.getElementById("joke");
-const punchline = document.getElementById("punchline");
+const punchline = document.getElementById("punchline");1
 const btn = document.getElementById("btn");
 
 async function generateJoke() {
@@ -11,7 +11,7 @@ async function generateJoke() {
     try {
 
         const response = await fetch(
-            "https://v2.jokeapi.dev/joke/Any?safe-mode"
+            "https://v2.jokeapi.dev/joke/Any"
         );
 
         const data = await response.json();
